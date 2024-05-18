@@ -1,0 +1,15 @@
+@use "../../styles/animations.scss" as *;
+
+.ul {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  row-gap: 15px;
+}
+
+.li {
+  overflow: hidden;
+  opacity: 0;
+  max-height: 1px;
+
+  animation: grow 400ms ease-in-out forwards;
+}

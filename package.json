@@ -1,0 +1,29 @@
+{
+  "name": "tema-17",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^9.0.8",
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@typescript-eslint/parser": "^5.30.6",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.19.0",
+    "eslint-plugin-react": "^7.34.1",
+    "sass": "^1.77.2",
+    "typescript": "^5.4.5",
+    "vite": "5.2.11"
+  }
+}

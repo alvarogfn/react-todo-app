@@ -1,0 +1,96 @@
+.card {
+  display: flex;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 5px;
+
+  width: 100%;
+  padding: 5px;
+}
+
+.checkboxLabel {
+  order: 1;
+
+  .checkbox {
+    appearance: none;
+
+    background-color: #fafafa;
+    border: 1px solid #0d65d9;
+
+    padding: 10px;
+    border-radius: 3px;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: 200ms;
+
+    &:checked {
+      background-color: #0597f2;
+      border: 1px solid #0d65d9;
+
+      &:after {
+        content: "\2714";
+
+        font-size: 0.85rem;
+
+        position: absolute;
+        top: 0px;
+        left: 4px;
+        color: white;
+      }
+    }
+  }
+}
+
+.inputLabel {
+  order: 2;
+  flex-grow: 1;
+
+  .input {
+    height: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+
+    &Checked {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+  }
+}
+
+.input {
+  width: 100%;
+}
+
+.delete {
+  color: white;
+
+  padding: 7.5px 20px;
+
+  background-color: #d91a2a;
+  background-image: url("../../assets/trash.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  text-indent: -999999px;
+
+  border-radius: 5px;
+
+  text-transform: capitalize;
+
+  cursor: pointer;
+
+  transition: 200ms;
+
+  &:hover {
+    background-color: darken($color: #d91a2a, $amount: 10%);
+  }
+}

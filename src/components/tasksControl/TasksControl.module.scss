@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+
+.clearAll,
+.clearCompleted {
+  box-shadow: 0 0 3px gray;
+
+  color: white;
+
+  font-size: 0.9rem;
+
+  letter-spacing: 1px;
+
+  padding: 12.5px;
+
+  flex-grow: 1;
+
+  cursor: pointer;
+
+  transition: 200ms;
+
+  &:disabled {
+    background-color: #455161;
+  }
+
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.clearAll {
+  background-color: #d91a2a;
+}
+
+.clearCompleted {
+  background-color: #0597f2;
+}

@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 15px;
+
+  max-width: 800px;
+  width: calc(100vw - 20px);
+  min-width: 300px;
+
+  padding: 15px;
+
+  margin: 0 auto;
+}
